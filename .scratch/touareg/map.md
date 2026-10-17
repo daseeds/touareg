@@ -32,6 +32,9 @@ Drift from these and the spec inherits the drift.
   Consequence: nothing in the app will surface a due Service, so who is told is load-bearing.
 - Any Member may attach a cost to an Observation or a Service. Only the Owner may decline an Observation
   or defer/skip a Service.
+- **Services are entered manually, each with a recurring time**, and the app **reminds Members** when one
+  falls due. Nothing is imported or discovered, so a Service that was never entered can never be reminded
+  about — the list is the whole safety net.
 - Stack: undecided. Firebase is a suggestion, not a given.
 
 **How sessions run here.** `/wayfinder <path/to/map.md>` resumes. Read the frontier from the
@@ -50,9 +53,6 @@ _Nothing resolved yet._
 
 ## Not yet specified
 
-- **Notifications and reminders**: what the app proactively surfaces — unpaid Dues, a Booking starting
-  tomorrow, an overdue Maintenance Item. Depends on the ledger, the Bookings and the Maintenance Items
-  all being settled.
 - **Guests and crew on a Booking**: whether a Booking can carry people who are not Members, and
   whether that affects the fairness cap.
 - **Export and backup**: getting the financial history out — CSV, a printable statement, something to
