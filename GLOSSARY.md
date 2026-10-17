@@ -68,7 +68,14 @@ _Avoid_: bookings, reservations, days sailed
 
 ## Maintenance
 
-**Maintenance Item**:
-A note of work the boat needs. Raised by any Member seeing something wrong or due — an electrical
-fault, a loose fitting, something to inspect.
-_Avoid_: note, task, todo, issue, repair request, fault
+**Observation**:
+Work the boat needs, noted by a Member on seeing it — an electrical fault, a loose fitting, something to
+inspect. Carries a lifecycle: raised, worked, then done or declined.
+_Avoid_: Maintenance Item, note, task, todo, issue, repair request, fault
+
+**Service**:
+Recurring work the boat needs on a cycle, whether or not anyone notices it is due — antifouling, rig
+inspection, sail inspection. Its next due date always counts from its last completion, so a job done
+late does not have its cycle squeezed. Completed directly by whoever did the work, never as a side
+effect of closing an Observation.
+_Avoid_: Maintenance Item, recurring task, reminder, schedule

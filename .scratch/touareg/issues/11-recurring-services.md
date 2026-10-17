@@ -14,8 +14,9 @@ Service actually runs on, so the spec can specify them rather than leaving them 
   months), and how the next due date is computed from the last completion.
 - Which Services are seasonal and therefore bound to a window rather than a date — "lay up before
   December", not "every 365 days".
-- What marks a Service done: an Owner ticking it off, or work logged against it elsewhere?
-- When a Service comes due, who is told? Is there a lead, or is it everybody's to notice?
+- **Load-bearing, because nothing will surface it:** when a Service comes due, who is told? The app does
+  not raise an Observation on its behalf, so the only thing standing between a Service and two years of
+  neglect is whoever happens to look. Is there a lead, or is it everybody's to notice?
 - Can a Service be marked not-applicable or skipped, and does that stop the cycle forever or just for
   one period?
 - Is there a Service that has come due and been deferred more than once — and if so, what does the app

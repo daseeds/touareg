@@ -26,8 +26,12 @@ Drift from these and the spec inherits the drift.
 - Share is 1 for every Member unless overridden.
 - Maintenance has **two faces**, both in scope: **observations** any Member raises on seeing something
   wrong ("an electric wire will need fixing"), and **service tracking** for recurring work that comes due
-  whether or not anyone notices. The shape of each is unsettled — see the Maintenance Items and
-  Recurring services tickets.
+  whether or not anyone notices. The shape of each is settled; see the Decisions below.
+- **Observations and Services are strictly separate.** A Service comes due and stays visible on its own;
+  the app never raises an Observation for it, and closing an Observation never completes a Service.
+  Consequence: nothing in the app will surface a due Service, so who is told is load-bearing.
+- Any Member may attach a cost to an Observation or a Service. Only the Owner may decline an Observation
+  or defer/skip a Service.
 - Stack: undecided. Firebase is a suggestion, not a given.
 
 **How sessions run here.** `/wayfinder <path/to/map.md>` resumes. Read the frontier from the
@@ -39,6 +43,8 @@ writing an `## Answer`, setting `Status: resolved`, and appending a one-line gis
 <!-- one line per resolved ticket: - [Title](path): gist. The detail lives in the ticket. -->
 
 _Nothing resolved yet._
+
+- [Maintenance Items: what the list is and how it works](issues/01-maintenance-items-shape.md): Observations (raised, worked, done or declined) and Services (recurring, next due always derived from last completion) are strictly separate — no auto-raising, no linkage. Done late counts from completion; deferring does not move the date, skipping does. Any Member may attach a cost, only the Owner may decline or move a Service date.
 
 - [Stack research: hosting, auth and database options against this app's needs](issues/05-stack-research.md): 8 invite emails fit every free tier's volume, but Firebase Spark cannot send one at all (no server to hold the key, magic links capped 5/day) while Supabase's default SMTP does 2/hour to project-team addresses only.
 
