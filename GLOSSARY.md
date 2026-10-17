@@ -74,8 +74,8 @@ inspect. Carries a lifecycle: raised, worked, then done or declined.
 _Avoid_: Maintenance Item, note, task, todo, issue, repair request, fault
 
 **Service**:
-Recurring work the boat needs on a cycle, whether or not anyone notices it is due — antifouling, rig
-inspection, sail inspection. Its next due date always counts from its last completion, so a job done
-late does not have its cycle squeezed. Completed directly by whoever did the work, never as a side
-effect of closing an Observation.
+Recurring work the boat needs, anchored to a time of the year rather than an elapsed interval —
+"before April", every year — whether or not anyone notices it is due. Its next due date always counts
+from its last completion, so a job run late does not have its cycle squeezed. Completed directly by
+whoever did the work, never as a side effect of closing an Observation.
 _Avoid_: Maintenance Item, recurring task, reminder, schedule

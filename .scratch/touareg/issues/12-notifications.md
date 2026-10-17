@@ -16,9 +16,10 @@ letting it grow one trigger at a time:
   enough, or is in-app acceptable because everyone checks the calendar anyway? If email: who sends it,
   and what does it cost against the free tier the Stack research found? Note that Firebase's free tier
   cannot send mail at all, so this interacts with that decision.
-- **Timing and repetition.** One reminder when a Service falls due, or again after a week, and again
-  after a month? The deferred-forever case is the one that matters: a Service nobody acts on should keep
-  saying so.
+- **Timing and repetition.** A Service reminder one month before its window is settled. What happens
+  while the Service stays undone — does it stay quiet, or say again next month? The deferred-forever
+  case is the one that matters: a Service nobody acts on should keep saying so. Same question for an
+  unpaid Dues balance: remind once, or every month until it clears?
 - **Who is told.** All Members about a Service, or only the Owner? And for a Balance, only the Member it
   belongs to, or everyone?
 - **Quiet hours.** Anyone reminded at 2am about antifouling will turn notifications off for good.

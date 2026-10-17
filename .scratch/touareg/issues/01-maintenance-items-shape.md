@@ -63,9 +63,9 @@ last completed, a derived next-due date, and counters for deferrals and skips.
 **Next due is always derived from the last completion, never stored alongside it**, so a Service can
 never disagree with its own cycle. That invariant is what makes the rest hold.
 
-**Done late counts from completion.** Antifouling finished three months overdue gets a full cycle from
-the day it was finished, not from the date it was due. Counting from the old due date squeezes the cycle
-and the job creeps earlier every year.
+**Done late counts from completion.** A Service finished after its window slips to the next window
+rather than squeezing its own cycle, so a job run late does not creep earlier every year. _Unchanged by
+the later decision to anchor Services to a time of year rather than an elapsed interval._
 
 **Deferring does not move the date.** The Service stays overdue, and the deferral is counted and shown.
 Silently resetting the schedule would hide precisely the case that matters — the boat quietly rotting.

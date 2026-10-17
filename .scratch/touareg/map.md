@@ -32,7 +32,8 @@ Drift from these and the spec inherits the drift.
   Consequence: nothing in the app will surface a due Service, so who is told is load-bearing.
 - Any Member may attach a cost to an Observation or a Service. Only the Owner may decline an Observation
   or defer/skip a Service.
-- **Services are entered manually, each with a recurring time**, and the app **reminds Members** when one
+- **Services are entered manually**, each with a recurring time that is **a point in the year, not an
+  elapsed interval** ("before April", annually), and the app **reminds Members one month before** one
   falls due. Nothing is imported or discovered, so a Service that was never entered can never be reminded
   about — the list is the whole safety net.
 - Stack: undecided. Firebase is a suggestion, not a given.
