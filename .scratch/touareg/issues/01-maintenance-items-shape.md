@@ -42,9 +42,11 @@ an Expense ticket depends on that answer.
 
 _Settling — one question still open. See the last section._
 
-A prototype at `prototype/maintenance-model.html` put the model through its awkward cases: the happy
-path, a job done late, a service deferred until it disappears, and an attempt at something that should
-be illegal. What survived:
+A prototype put the model through its awkward cases: the happy path, a job done late, a service
+deferred until it disappears, and an attempt at something that should be illegal. It is kept as a
+primary source on the throwaway branch `prototype/maintenance-model` (file
+`prototype/maintenance-model.html`, never merged); the pure reducer in its `model` script block is the
+part worth lifting into the real code. What survived:
 
 **Two kinds of Maintenance, and they behave differently enough to be distinct concepts.** An
 **Observation** is raised by a Member on seeing something wrong. A **Service** is recurring work on a
