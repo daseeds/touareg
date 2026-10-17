@@ -36,6 +36,13 @@ Drift from these and the spec inherits the drift.
   elapsed interval** ("before April", annually), and the app **reminds Members one month before** one
   falls due. Nothing is imported or discovered, so a Service that was never entered can never be reminded
   about — the list is the whole safety net.
+- **Nothing is enforced.** No per-Member cap on days booked, no limit on a single run, and **no Owner
+  override of any kind** — not cancelling another Member's Booking, not blocking a Member. The app shows
+  each Member their own days used (Fare year, and rolling six months) and the Members discuss priority
+  themselves. What the app supplies instead is a number that can be trusted and a record of who did what.
+- A **Use** may be logged after the fact for any past date in the current Fare year, and counts exactly
+  as a Completed Booking. A Booking that has already started **cannot be cancelled**. The **Owner may
+  block a date range** with a reason, and nothing may be booked inside it.
 - Stack: undecided. Firebase is a suggestion, not a given.
 
 **How sessions run here.** `/wayfinder <path/to/map.md>` resumes. Read the frontier from the
@@ -49,6 +56,7 @@ writing an `## Answer`, setting `Status: resolved`, and appending a one-line gis
 _Nothing resolved yet._
 
 - [Maintenance Items: what the list is and how it works](issues/01-maintenance-items-shape.md): Observations (raised, worked, done or declined) and Services (recurring, next due always derived from last completion) are strictly separate — no auto-raising, no linkage. Done late counts from completion; deferring does not move the date, skipping does. Any Member may attach a cost, only the Owner may decline or move a Service date.
+- [Booking rules: conflicts, the season cap, and cancellation](issues/02-booking-rules.md): no cap and no Owner override — days used per Fare year and rolling six months are advisory, and the group decides. Bookings run as long as they like; a Use can be logged for any past date in the current Fare year; a started Booking cannot be cancelled; the Owner may block a date range with a reason.
 
 - [Stack research: hosting, auth and database options against this app's needs](issues/05-stack-research.md): 8 invite emails fit every free tier's volume, but Firebase Spark cannot send one at all (no server to hold the key, magic links capped 5/day) while Supabase's default SMTP does 2/hour to project-team addresses only.
 

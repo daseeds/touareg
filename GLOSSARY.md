@@ -49,22 +49,49 @@ A half-day period the boat can be booked in: morning, afternoon, or night. A sin
 _Avoid_: half-day, period, timeslot
 
 **Booking**:
-One Member's claim on one or more consecutive Slots on one or more dates. A Booking is a claim that
-the boat will be used, not proof it was.
+One Member's claim on one or more consecutive Slots on one or more dates. A run of several days is one
+Booking, not several. A Booking is a claim that the boat will be used, not proof it was. Only ever made
+by the Member it belongs to.
 _Avoid_: reservation, hire, rental
 
+**Interest**:
+A Member's registration that they would have taken a Slot another Member holds. They are told if that
+Booking is Cancelled. An Interest is not a Booking, confers no priority, and builds no queue.
+_Avoid_: waitlist entry, claim, request
+
 **Cancelled Booking**:
-A Booking given up before use. It no longer counts toward anything.
+A Booking given up before it starts. It releases its Slots at once and no longer counts toward anything.
+A Booking that has already started cannot be Cancelled.
 _Avoid_: deleted booking
 
+**Blocked Period**:
+A date range the Owner has marked the boat unavailable — laid up, in the yard, out of action. Shown with
+its reason, and nothing may be booked inside it.
+_Avoid_: blackout, closure, unavailability, maintenance window
+
+**Use**:
+A Member actually having the boat. Counted as Days Used whether or not it was reserved, so a trip logged
+after the fact counts the same as a Completed Booking. Logged for any past date in the current Fare year,
+never for a future date, and never inside a Blocked Period.
+_Avoid_: sail, trip (a Booking is the claim; a Use is the fact)
+
 **Completed Booking**:
-A Booking marked as actually used. The basis for Days Used.
+A Booking marked as actually used. One of the two ways a Use is recorded; the other is logging it
+directly.
 _Avoid_: confirmed booking, sailed
 
 **Days Used**:
-The Slots of Completed Bookings, counted as fractions of a day, per Member. Distinct from Days
-Booked, which counts every Booking that was not Cancelled.
+The Slots a Member has had the boat, counted as fractions of a day — whether from a Completed Booking or
+from a Use logged after the fact. Distinct from Days Booked, which counts every Booking that was not
+Cancelled.
 _Avoid_: bookings, reservations, days sailed
+
+## Record
+
+**Audit Log**:
+The record of what each Member has done, readable by every Member, so the day counts above can be
+trusted. Its shape is still being decided.
+_Avoid_: history, activity log, changelog
 
 ## Maintenance
 

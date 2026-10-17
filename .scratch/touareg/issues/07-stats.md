@@ -17,5 +17,9 @@ Member. Settle what is actually reported:
   something closes it. Does anything close past Bookings automatically, and if so does the app invent a
   Completion it cannot know happened?
 - Given full transparency was chosen, is there a fairness view — who has used the boat most — or does
-  displaying a leaderboard invite the comparison it is meant to settle?
-- Lifetime totals per Member, or only per Fare year?
+  displaying a leaderboard invite the comparison it is meant to settle? _Settled in Booking rules: yes,
+  and it is the whole mechanism, since the fairness cap was dropped and nothing is enforced. It shows two
+  figures per Member — days used in the current Fare year, and days used over the rolling last six
+  months._ Settle how they are laid out, and whether Days Booked gets the same two figures or stays
+  Fare-year only.
+- Lifetime totals per Member, or only the two windows above?
